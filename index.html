@@ -66,8 +66,13 @@
     // ❗ Notes:
     // 🧠 Solve this challenge using the forEach method of the learners array.
     // 🧠 Use arrow functions whenever possible.
-    const processLearnerForEach = () => {
-
+    const processLearnerForEach = (learners) => {
+        let result = []
+        learners.forEach(learner => {
+          const processed = processSingleLearner(learner)
+          result.push(processed)
+        })
+        return result
     }
 
     // 👉 CHALLENGE 4
